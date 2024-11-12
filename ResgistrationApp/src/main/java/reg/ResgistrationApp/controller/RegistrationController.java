@@ -18,7 +18,7 @@ import reg.ResgistrationApp.model.User;
 import reg.ResgistrationApp.service.UserService;
 import reg.ResgistrationApp.util.LoginRequest;
 import reg.ResgistrationApp.util.UserDto;
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://shamnasproject.netlify.app")
 @RestController
 public class RegistrationController {
    @Autowired

@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import reg.ResgistrationApp.model.Todo;
 import reg.ResgistrationApp.service.TodoService;
 import reg.ResgistrationApp.util.TodoDto;
-@CrossOrigin(origins = "http://localhost:4200")
+@CrossOrigin(origins = "https://shamnasproject.netlify.app")
 @RestController
 public class TodoController {
 	@Autowired
