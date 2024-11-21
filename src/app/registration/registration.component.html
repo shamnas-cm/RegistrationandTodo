@@ -1,0 +1,37 @@
+
+<!-- <form (ngSubmit)="onSubmit()"> -->
+<form (ngSubmit)="Submit(Signup)" #Signup="ngForm" >
+    <div class="form-group">
+        <label for="firstname" >FirstName: </label>
+        <input type="text"  name="firstName" id="firstname" ngModel  required class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="lastname" >LastName: </label>
+        <input type="text" name="lastName" id="lastname" ngModel  required class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="email" >email: </label>
+        <input type="email" name="email" id="email" ngModel  required class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="password" >Password: </label>
+        <input type="password" name="password" id="password" ngModel  required class="form-control">
+    </div>
+    <div>
+        <label for="mobilenumber" >MobNo: </label>
+        <input type="mobile" name="mobileno" id="mobileno"  ngModel required class="form-control">
+    </div>
+    <div class="form-group">
+        <label for="gender" >gender </label><br>
+        <input type="radio" name="gender" id="gender" value="male" ngModel required>male
+        <input type="radio" name="gender" id="gender" value="female" ngModel required>female
+        <input type="radio" name="gender" id="gender" value="other" ngModel required>other
+    </div>
+
+    <button class="btn btn-outline-success">REGISTER</button>
+</form>
+   
+   
+
+
+

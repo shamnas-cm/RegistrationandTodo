@@ -1,0 +1,15 @@
+<p>profile works!</p>
+
+<div *ngIf="profile">
+  <p>{{ 'firstName' | translate}}:{{ profile.firstName }}</p>
+  <p>{{ 'lastName' | translate}} :{{ profile.lastName  }} </p>
+</div>
+<button (click)="changeLanguage('ml')">Malayalam</button>
+<button (click)="changeLanguage('en')">English</button>
+
+
+  <app-todo></app-todo>
+  
+  <div *ngIf="!profile">
+    <p>No profile information available.</p>
+  </div>

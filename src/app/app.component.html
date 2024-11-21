@@ -1,0 +1,10 @@
+<h1 style="text-align: center;">{{"WELCOME" | translate}}</h1>
+
+<button  (click)="changeLanguage('ml')" >Malayalam</button>
+<button (click)="changeLanguage('en')">English</button>
+<button (click)="changeLanguage('hi')">HINDI</button>
+<br><br><br>
+
+<a routerLink="reg" class="btn btn-outline-primary">Register</a>
+<a routerLink="login" class="btn btn-outline-primary">Login</a>
+<router-outlet></router-outlet>
